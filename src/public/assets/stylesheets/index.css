@@ -1,0 +1,46 @@
+/* -------------------  MOBILE  --------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  min-height: 100vh;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: 1f, 1f, 1f, 1f;
+}
+
+.grid-image {
+  display: block;
+  flex-basis: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* -------------------  TABLET  --------------------- */
+@media (min-width: 768px) {
+  .grid-image{
+    flex-basis: 50%
+  }
+}
+
+/* -------------------  DESKTOP  -------------------- */
+
+@media (min-width: 1224px) {
+  .grid-image{
+    flex-basis: 25%
+  }
+}
+
+/* -------------------  LARGE SCREENS  -------------- */
+
+@media (min-width: 1824px) {
+  .grid-image{
+    flex-basis: 20%
+  }
+}
